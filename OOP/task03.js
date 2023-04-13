@@ -2,18 +2,12 @@ const _ = require('lodash');
 const fs = require('fs');
 const colors = JSON.parse(fs.readFileSync('colors.json', 'utf8'));
 
-var resultArr = _.map(colors, function(item){
-    return _.keys(item)[0]
-})
+const resultArr = _(colors)
+  .map(item => _.keys(item)[0])
+  .filter(item => item.length < 6)
+  .sortBy()
+  .value();
 
-resultArr = _.filter(resultArr, function(item){
-    return item.length < 6
-})
-
-resultArr = _.sortBy(resultArr)
-
-console.log(resultArr)
-
-_.each(resultArr, function(item){
-    console.log(item)
-})
+_.each(resultArr, item => {
+  console.log(item);
+});

@@ -2,18 +2,12 @@ const _ = require('lodash');
 const fs = require('fs');
 const users = JSON.parse(fs.readFileSync('users.json', 'utf8'));
 
-var resultArr = _.filter(users, function(item){
-    return item.address.geo.lat < 0
-})
+const resultArr = _(users)
+  .filter(item => item.address.geo.lat < 0)
+  .map(item => ({ username: item.username, city: item.address.city }))
+  .orderBy('city', 'desc')
+  .value();
 
-resultArr = _.map(resultArr, function(item){
-    return {username: item.username, city: item.address.city}
-})
- 
-resultArr = _.orderBy(resultArr, 'city', 'desc')
-
-console.log(resultArr)
-
-_.each(resultArr, function(item){
-    console.log(item)
-})
+_.each(resultArr, item => {
+  console.log(item);
+});
