@@ -1,11 +1,11 @@
-iso_code,location,total_new_cases
-OWID_WRL,World,4690715.0
-OWID_EUR,Europe,1729953.0
-OWID_EUN,European Union,1390356.0
-OWID_ASI,Asia,1271046.0
-OWID_SAM,South America,951391.0
-OWID_NAM,North America,643334.0
-BRA,Brazil,618728.0
-USA,United States,535260.0
-IND,India,487607.0
-FRA,France,331461.0
+location,max_new_cases,date_of_max_cases
+Europe,256192.0,2021-03-24
+European Union,216452.0,2021-03-24
+South America,148476.0,2021-03-24
+North America,100760.0,2021-03-24
+Brazil,100158.0,2021-03-24
+United States,86960.0,2021-03-24
+India,72330.0,2021-03-24
+France,65392.0,2021-03-24
+Turkey,39302.0,2021-03-24
+Poland,35145.0,2021-03-24
