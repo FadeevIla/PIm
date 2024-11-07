@@ -1,0 +1,18 @@
+{
+  "type": "record",
+  "name": "Alert",
+  "fields": [
+    {
+      "name": "product_id",
+      "type": "int"
+    },
+    {
+      "name": "total_revenue",
+      "type": "float"
+    },
+    {
+      "name": "alert",
+      "type": "string"
+    }
+  ]
+}
