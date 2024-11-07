@@ -1,0 +1,42 @@
+{
+  "namespace": "ksql",
+  "name": "purchase",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "long",
+        "arg.properties": {
+          "iteration": {
+            "start": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "quantity",
+      "type": {
+        "type": "long",
+        "arg.properties": {
+          "range": {
+            "min": 1,
+            "max": 11
+          }
+        }
+      }
+    },
+    {
+      "name": "productid",
+      "type": {
+        "type": "long",
+        "arg.properties": {
+          "range": {
+            "min": 0,
+            "max": 100
+          }
+        }
+      }
+    }
+  ]
+}
