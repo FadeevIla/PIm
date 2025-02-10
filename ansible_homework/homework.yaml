@@ -1,0 +1,55 @@
+---
+- name: Homework Ansible Playbook
+  hosts: netology-ml
+  become: yes
+  vars:
+    packages:
+      - net-tools
+      - git
+      - tree
+      - htop
+      - mc
+      - vim
+
+  tasks:
+    - name: Gather facts
+      setup:
+
+    - name: Check hosts availability using ping
+      ping:
+
+    - name: Install necessary packages
+      apt:
+        name: "{{ item }}"
+        state: present
+        update_cache: yes
+      loop: "{{ packages }}"
+
+    - name: Create ansible user
+      user:
+        name: ansible
+        state: present
+        shell: /bin/bash
+
+    - name: Create directory for ansible user
+      file:
+        path: /home/ansible
+        state: directory
+        owner: ansible
+        group: ansible
+        mode: '0755'
+
+    - name: Copy the test.txt file to the remote host
+      copy:
+        src: files/test.txt
+        dest: /home/ansible/test.txt
+
+    - name: Create users and directories
+      user:
+        name: "{{ item }}"
+        state: present
+        home: "/home/{{ item }}"
+      with_items:
+        - devops_1
+        - test_1
+

@@ -1,0 +1,43 @@
+[WARNING]: Ansible is being run in a world writable directory
+(/mnt/c/Users/Илья/ansible_homework), ignoring it as an ansible.cfg source. For
+more information see
+https://docs.ansible.com/ansible/devel/reference_appendices/config.html#cfg-in-
+world-writable-dir
+[WARNING]: Invalid characters were found in group names but not replaced, use
+-vvvv to see details
+
+PLAY [Homework Ansible Playbook] ***********************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [172.26.67.218]
+
+TASK [Gather facts] ************************************************************
+ok: [172.26.67.218]
+
+TASK [Check hosts availability using ping] *************************************
+ok: [172.26.67.218]
+
+TASK [Install necessary packages] **********************************************
+ok: [172.26.67.218] => (item=net-tools)
+ok: [172.26.67.218] => (item=git)
+ok: [172.26.67.218] => (item=tree)
+ok: [172.26.67.218] => (item=htop)
+ok: [172.26.67.218] => (item=mc)
+ok: [172.26.67.218] => (item=vim)
+
+TASK [Create ansible user] *****************************************************
+ok: [172.26.67.218]
+
+TASK [Create directory for ansible user] ***************************************
+ok: [172.26.67.218]
+
+TASK [Copy the test.txt file to the remote host] *******************************
+ok: [172.26.67.218]
+
+TASK [Create users and directories] ********************************************
+ok: [172.26.67.218] => (item=devops_1)
+ok: [172.26.67.218] => (item=test_1)
+
+PLAY RECAP *********************************************************************
+172.26.67.218              : ok=8    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

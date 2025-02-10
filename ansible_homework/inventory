@@ -1,0 +1,5 @@
+[netology-ml]
+172.26.67.218 ansible_user=ilya ansible_ssh_private_key_file=/home/ilya/.ssh/id_rsa
+
+[netology-ml:vars]
+ansible_python_interpreter=/usr/bin/python3
