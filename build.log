@@ -1,0 +1,72 @@
+failed to get console mode for stdout: The handle is invalid.
+failed to get console mode for stdout: The handle is invalid.
+[1A[1B[0G[?25l[+] Building 0.0s (0/0)                                          docker:default
+[?25h[1A[0G[?25l[+] Building 0.0s (0/0)                                          docker:default
+[?25h[1A[0G[?25l[+] Building 0.0s (0/0)                                          docker:default
+[?25h[1A[0G[?25l[+] Building 0.0s (0/0)                                          docker:default
+[?25h[1A[0G[?25l[+] Building 0.0s (0/0)                                          docker:default
+[?25h[1A[0G[?25l[+] Building 0.0s (0/0)                                          docker:default
+[?25h[1A[0G[?25l[+] Building 0.0s (0/0)                                          docker:default
+[?25h[1A[0G[?25l[+] Building 0.0s (0/0)                                          docker:default
+[?25h[1A[0G[?25l[+] Building 0.0s (0/0)                                          docker:default
+[?25h[1A[0G[?25l[+] Building 0.0s (0/1)                                          docker:default
+[?25h[1A[0G[?25l[+] Building 0.1s (1/2)                                          docker:default
+ => [internal] load .dockerignore                                          0.1s
+[36m => => transferring context: 2B                                            0.0s
+[0m[36m => [internal] load build definition from Dockerfile                       0.1s
+[0m[36m => => transferring dockerfile: 276B                                       0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (2/3)                                          docker:default
+[36m => [internal] load .dockerignore                                          0.1s
+[0m[36m => => transferring context: 2B                                            0.0s
+[0m[36m => [internal] load build definition from Dockerfile                       0.1s
+[0m[36m => => transferring dockerfile: 276B                                       0.0s
+[0m => [internal] load metadata for docker.io/continuumio/miniconda3:latest   0.1s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.4s (2/3)                                          docker:default
+[36m => [internal] load .dockerignore                                          0.1s
+[0m[36m => => transferring context: 2B                                            0.0s
+[0m[36m => [internal] load build definition from Dockerfile                       0.1s
+[0m[36m => => transferring dockerfile: 276B                                       0.0s
+[0m => [internal] load metadata for docker.io/continuumio/miniconda3:latest   0.3s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (2/3)                                          docker:default
+[36m => [internal] load .dockerignore                                          0.1s
+[0m[36m => => transferring context: 2B                                            0.0s
+[0m[36m => [internal] load build definition from Dockerfile                       0.1s
+[0m[36m => => transferring dockerfile: 276B                                       0.0s
+[0m => [internal] load metadata for docker.io/continuumio/miniconda3:latest   0.4s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.8s (2/3)                                          docker:default
+[36m => [internal] load .dockerignore                                          0.1s
+[0m[36m => => transferring context: 2B                                            0.0s
+[0m[36m => [internal] load build definition from Dockerfile                       0.1s
+[0m[36m => => transferring dockerfile: 276B                                       0.0s
+[0m => [internal] load metadata for docker.io/continuumio/miniconda3:latest   0.6s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.9s (2/3)                                          docker:default
+[36m => [internal] load .dockerignore                                          0.1s
+[0m[36m => => transferring context: 2B                                            0.0s
+[0m[36m => [internal] load build definition from Dockerfile                       0.1s
+[0m[36m => => transferring dockerfile: 276B                                       0.0s
+[0m => [internal] load metadata for docker.io/continuumio/miniconda3:latest   0.7s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.1s (3/3)                                          docker:default
+[36m => [internal] load .dockerignore                                          0.1s
+[0m[36m => => transferring context: 2B                                            0.0s
+[0m[36m => [internal] load build definition from Dockerfile                       0.1s
+[0m[36m => => transferring dockerfile: 276B                                       0.0s
+[0m[36m => [internal] load metadata for docker.io/continuumio/miniconda3:latest   0.9s
+[0m[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.1s (11/11) FINISHED                               docker:default
+[36m => [internal] load .dockerignore                                          0.1s
+[0m[36m => => transferring context: 2B                                            0.0s
+[0m[36m => [internal] load build definition from Dockerfile                       0.1s
+[0m[36m => => transferring dockerfile: 276B                                       0.0s
+[0m[36m => [internal] load metadata for docker.io/continuumio/miniconda3:latest   0.9s
+[0m[36m => [internal] load build context                                          0.0s
+[0m[36m => => transferring context: 25B                                           0.0s
+[0m[36m => [1/6] FROM docker.io/continuumio/miniconda3:latest@sha256:2b267ca91c8  0.0s
+[0m[36m => CACHED [2/6] WORKDIR /app                                              0.0s
+[0m[36m => CACHED [3/6] COPY 1.sh /app/1.sh                                       0.0s
+[0m[36m => CACHED [4/6] RUN chmod +x /app/1.sh                                    0.0s
+[0m[36m => CACHED [5/6] RUN apt-get update && apt-get install -y bash  # Уст�     0.0s
+[0m[36m => CACHED [6/6] RUN pip install mlflow boto3 pymysql                      0.0s
+[0m[36m => exporting to image                                                     0.0s
+[0m[36m => => exporting layers                                                    0.0s
+[0m[36m => => writing image sha256:b33b33f5b4d03687492cacb89a13672ed131f2774d394  0.0s
+[0m[36m => => naming to docker.io/library/netology-ml:netology-ml                 0.0s
+[0m[?25h
